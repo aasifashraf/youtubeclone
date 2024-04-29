@@ -8,7 +8,7 @@ const Search = () => {
         <input
           type="text"
           placeholder="Search"
-          className=" border-[1px] outline-none rounded-l-full p-1.5 text-sm h-8 w-[20rem] border-r-transparent  "
+          className=" border-[1px] outline-none rounded-l-full p-1.5 text-sm h-8 w-[28rem] border-r-transparent  "
         />
       </div>
       <div className="cursor-pointer rounded-r-full p-2 border-[1px] h-8 border-l-transparent hover:bg-gray-100">

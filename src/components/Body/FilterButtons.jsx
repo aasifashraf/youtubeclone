@@ -21,10 +21,13 @@ const FilterButtons = () => {
     "Laughters",
     "Humor",
   ];
+
   return (
     <div className="h-10 my-  overflow-y-hidden overflow-x-hidden">
-      {buttonList.map((item) => (
-        <button className=" bg-gray-100 rounded-md mx-1 mb-10 px-3 py-1">
+      {buttonList.map((item, index) => (
+        <button
+          className=" bg-gray-100 rounded-md mx-1 mb-10 px-3 py-1"
+          key={index}>
           {item}
         </button>
       ))}
