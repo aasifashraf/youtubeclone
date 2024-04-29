@@ -3,7 +3,7 @@ import NavigationSlice from "./NavigationSlice";
 
 const store = configureStore({
   reducer: {
-    Navigation: NavigationSlice.reducer,
+    Navigation: NavigationSlice,
   },
 });
 
