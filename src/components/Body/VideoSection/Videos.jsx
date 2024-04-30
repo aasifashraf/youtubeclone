@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { API } from "../../../utilities/constants/constants";
 import VideoTemplete from "./VideoTemplete";
 import ShimmerUI from "../../../utilities/constants/ShimmerUI";
+import { Link } from "react-router-dom";
 const Videos = () => {
   const [videos, setVideos] = useState([]);
 
@@ -20,7 +21,9 @@ const Videos = () => {
   return (
     <div className=" w-full flex flex-wrap">
       {videos.map((video) => (
-        <VideoTemplete details={video} />
+        <Link to={`/watch?v=${video.id}`}>
+          <VideoTemplete details={video} />
+        </Link>
       ))}
     </div>
   );

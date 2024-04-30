@@ -9,8 +9,11 @@ const NavigationSlice = createSlice({
     showNavigation: (state) => {
       state.show = !state.show;
     },
+    hideSidebar: (state) => {
+      state.show = false;
+    },
   },
 });
 
-export const { showNavigation } = NavigationSlice.actions;
+export const { showNavigation, hideSidebar } = NavigationSlice.actions;
 export default NavigationSlice.reducer;

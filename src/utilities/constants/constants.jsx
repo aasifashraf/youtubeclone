@@ -3,4 +3,4 @@ export const youtubelogo =
 
 const API_KEY = "AIzaSyBBgW1Yzoj1X-PmairL5Gc0EfzeMtHC5ZE";
 
-export const API = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&part=contentDetails&part=statistics&chart=mostPopular&key=${API_KEY}&maxResults=50`;
+export const API = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&part=contentDetails&part=statistics&chart=mostPopular&regionCode=IN&key=${API_KEY}&maxResults=50`;

@@ -12,6 +12,7 @@ import { MdOutlineWatchLater } from "react-icons/md";
 import { AiOutlineLike } from "react-icons/ai";
 import { RiScissorsLine } from "react-icons/ri";
 import { BiImages } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const sidebarlist = [
@@ -45,7 +46,9 @@ const Sidebar = () => {
       <div className="border-b-[1px] mx-4">
         <div className="flex p-1 items-center">
           <MdHomeFilled className="px-2 text-4xl" />
-          <p>Home</p>
+          <p>
+            <Link to="/">Home</Link>
+          </p>
         </div>
         <div className="flex p-1 items-center">
           <SiYoutubeshorts className="px-2 text-4xl" />

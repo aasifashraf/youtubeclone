@@ -1,15 +1,15 @@
 import Sidebar from "./Sidebar";
 import FilterButtons from "./FilterButtons";
-import Videos from "./VideoSection/Videos";
+import { Outlet } from "react-router-dom";
 const Body = () => {
   return (
     <div className="flex ">
-      <div className="w-[30rem]">
-        <Sidebar />
+      <div>
+        <Sidebar className="w-[30rem]" />
       </div>
       <div className="ml-6 w-1/1 ">
         <FilterButtons />
-        <Videos className="" />
+        <Outlet />
       </div>
     </div>
   );

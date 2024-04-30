@@ -11,7 +11,7 @@ const VideoTemplete = ({ details }) => {
   console.log(details);
 
   return (
-    <div className="w-1/3 px-2 my-[1rem]">
+    <div className="w-[23rem] px-2 my-[1rem]">
       <img
         src={thumbnails?.high?.url}
         alt="thumbnail"
