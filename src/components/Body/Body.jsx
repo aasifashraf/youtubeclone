@@ -4,10 +4,12 @@ import Videos from "./VideoSection/Videos";
 const Body = () => {
   return (
     <div className="flex ">
-      <Sidebar />
-      <div className="ml-6 ">
+      <div className="w-[30rem]">
+        <Sidebar />
+      </div>
+      <div className="ml-6 w-1/1 ">
         <FilterButtons />
-        <Videos />
+        <Videos className="" />
       </div>
     </div>
   );

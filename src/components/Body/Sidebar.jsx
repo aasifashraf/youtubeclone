@@ -41,8 +41,8 @@ const Sidebar = () => {
   if (!showNavigation) return null;
 
   return (
-    <div className="w-1/5 h-full overflow-y-hidden position-fixed">
-      <div className="border-b-[1px] mx-5">
+    <div className="w-[13rem] h-full overflow-y-scoll position-fixed">
+      <div className="border-b-[1px] mx-4">
         <div className="flex p-1 items-center">
           <MdHomeFilled className="px-2 text-4xl" />
           <p>Home</p>
