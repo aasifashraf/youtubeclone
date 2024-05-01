@@ -13,13 +13,13 @@ const Videos = () => {
   const fetchData = async () => {
     const response = await fetch(API);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     setVideos(data.items);
   };
   if (!videos) return <ShimmerUI width="w-full" height="h-24" />;
 
   return (
-    <div className=" w-full flex flex-wrap">
+    <div className=" w-full flex flex-wrap justify-around">
       {videos.map((video) => (
         <Link to={`/watch?v=${video.id}`}>
           <VideoTemplete details={video} />

@@ -13,6 +13,7 @@ import { AiOutlineLike } from "react-icons/ai";
 import { RiScissorsLine } from "react-icons/ri";
 import { BiImages } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import SidebarIcons from "./SidebarIcons";
 
 const Sidebar = () => {
   const sidebarlist = [
@@ -39,9 +40,9 @@ const Sidebar = () => {
 
   const showNavigation = useSelector((store) => store.Navigation.show);
 
-  if (!showNavigation) return null;
-
-  return (
+  return !showNavigation ? (
+    <SidebarIcons className="" />
+  ) : (
     <div className="w-[13rem] h-full overflow-y-scoll position-fixed">
       <div className="border-b-[1px] mx-4">
         <div className="flex p-1 items-center">
